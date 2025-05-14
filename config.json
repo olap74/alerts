@@ -1,0 +1,22 @@
+{
+    "api_url": "https://api.ukrainealarm.com/api/v3/alerts/1293",
+    "auth_header": "token",
+    "audio_files": {
+      "AIR": "sounds/start.mp3",
+      "ARTILLERY": "sounds/start.mp3",
+      "URBAN_FIGHTS": "sounds/start.mp3",
+      "CHEMICAL": "sounds/start.mp3",
+      "NUCLEAR": "sounds/start.mp3",
+      "UNKNOWN": "sounds/start.mp3"
+    },
+    "alert_on_empty": "sounds/finish.mp3",
+    "time_zone": "Europe/Warsaw",
+    "log_to_file": true,
+    "log_to_console": true,
+    "log_file_path": "app.log",
+    "log_level": 1,
+    "repeat_audio_file": "sounds/continue.mp3",
+    "enable_repeat_audio": true,
+    "repeat_interval_min": 3,
+    "request_interval_sec": 5
+}
