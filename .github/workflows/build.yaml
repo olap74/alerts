@@ -32,11 +32,11 @@ jobs:
       - name: Build Binary
         run: |
           go get -v ./...
-          go build -tags timetzdata -o alerts-windows-amd64.exe .
+          go build -tags timetzdata -o alerts-windows-amd64 .
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: alerts-windows-amd64.exe
+          name: alerts-windows-amd64
           path: alerts-windows-amd64
   build-linux:
     needs: prepare
