@@ -122,6 +122,7 @@ Download the latest binaries for your OS:
 
 - [Windows (.exe)](https://github.com/olap74/alerts/releases/latest/download/alerts-windows-amd64.exe)
 - [Linux (amd64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-amd64)
+- [Linux (arm64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-arm64)
 - [MacOS (Apple Silicon)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-aarch64)
 - [MacOS (Intel)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-x86)
 
