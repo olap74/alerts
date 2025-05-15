@@ -14,15 +14,30 @@ The program takes information about Alerts from [Ukrainealarm](https://api.ukrai
 - Logs events to a file and/or console.
 - Stores alarm state in `state.json` for correct operation between restarts.
 - Repeats the alarm signal at a specified interval if the alarm remains active.
-- Does not play the repeat signal more than once per minute.
 
-## Quick Start
+## Releases
+
+Download the latest binaries for your OS:
+
+- [Windows (.exe)](https://github.com/olap74/alerts/releases/latest/download/alerts-windows-amd64.exe)
+- [Linux (amd64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-amd64)
+- [Linux (arm64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-arm64)
+- [MacOS (Apple Silicon)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-aarch64)
+- [MacOS (Intel)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-x86)
+
+## Installation
+
+- Download release binary for your OS using links above
+- Create a config.json and correct all settings (see the description below)
+- Run the program
+
+The program plays sounds to the default audio device. State and Log files (if logging enabled) are being created by program itself. 
+
+## Quick run from source
 
 ```sh
 go run main.go
 ```
-
-## Installation
 
 ### Dependencies
 
@@ -115,16 +130,6 @@ go build -o alerts .
 - Make sure all mp3 files exist at the specified paths.
 - The program is cross-platform and works on Linux, Windows, and MacOS.
 - For correct time handling, set the `time_zone` parameter properly.
-
-## Releases
-
-Download the latest binaries for your OS:
-
-- [Windows (.exe)](https://github.com/olap74/alerts/releases/latest/download/alerts-windows-amd64.exe)
-- [Linux (amd64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-amd64)
-- [Linux (arm64)](https://github.com/olap74/alerts/releases/latest/download/alerts-linux-arm64)
-- [MacOS (Apple Silicon)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-aarch64)
-- [MacOS (Intel)](https://github.com/olap74/alerts/releases/latest/download/alerts-darwin-x86)
 
 ---
 

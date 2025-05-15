@@ -365,9 +365,7 @@ func main() {
 	}
 }
 
-// Обертка для ProcessAlerts, возвращает isActive и regionName для первого запуска
 func ProcessAlertsWithFirstRun(config *Config, firstRun bool) (bool, string) {
-	// ...код ProcessAlerts до определения isActive, eventRegionName...
 	req, err := http.NewRequest("GET", config.APIURL, nil)
 	if err != nil {
 		Log(3, config, "Помилка запиту до сервера: "+err.Error())
