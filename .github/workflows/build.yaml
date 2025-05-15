@@ -32,12 +32,13 @@ jobs:
       - name: Build Binary
         run: |
           go get -v ./...
-          go build -tags timetzdata -o alerts-windows-amd64 .
+          go build -tags timetzdata -o alerts-windows-amd64.exe .
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: alerts-windows-amd64
-          path: alerts-windows-amd64
+          name: alerts-windows-amd64.exe
+          path: alerts-windows-amd64.exe
+
   build-linux:
     needs: prepare
     runs-on: ubuntu-latest      
@@ -116,5 +117,3 @@ jobs:
           body: "Release for ${{ needs.prepare.outputs.tag }}"
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-
-  
