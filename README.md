@@ -4,7 +4,7 @@
 
 **Alert** is a program for monitoring alarms via API and automatically playing sound signals when the alarm state changes in a specified region. It supports event logging, multiple alarm types, repeated signal playback, and flexible configuration via a JSON file.
 
-The program takes information about Alerts from (Ukrainealarm)[https://api.ukrainealarm.com/]
+The program takes information about Alerts from [Ukrainealarm](https://api.ukrainealarm.com/)
 
 ## Main Features
 
